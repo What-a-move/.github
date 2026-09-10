@@ -4,39 +4,44 @@
 
 <h1 align="center">FocusOn</h1>
 
+<h3 align="center">학습 흐름을 기록하고, 다시 집중할 수 있도록</h3>
+
+<p align="center">
+  Desktop과 Chrome Extension으로 학습 활동을 기록하고<br>
+  AI가 목표 관련성을 분석해 집중을 돕는 학습 보조 서비스
+</p>
+
 ## 💡 프로젝트 소개
 
-사용자의 학습 흐름을 분석하고 집중을 도와주는 AI 기반 학습 보조 서비스 **FocusOn**입니다.
+**FocusOn**은 사용자가 세운 목표와 현재 활동을 비교해 학습에 집중할 수 있도록 도와줍니다.
 
-FocusOn은 사용자가 설정한 학습 목표를 기준으로 macOS 데스크톱 앱과 Chrome 브라우저의 활동을 기록하고, 현재 학습 활동이 목표와 관련 있는지 분석합니다.
+macOS 앱과 Chrome 페이지의 활동을 기록하고, AI 분석을 통해 목표 이탈 알림과 학습 리포트를 제공합니다.
 
-Desktop 앱에서 학습 세션과 타이머를 관리하며, Chrome Extension을 통해 현재 페이지와 브라우저 이동 흐름을 확인합니다.
-
-화면 및 페이지 분석과 사용자가 선택한 카메라 분석을 기반으로 집중 상태를 판단하고, 목표에서 벗어난 경우 알림을 제공하며 학습 종료 후 집중 리포트를 확인할 수 있습니다.
+> **학습 목표 설정 → 활동 기록 → AI 분석 → 집중 피드백 → 학습 리포트**
 
 ## ✨ 주요 기능
 
-- 학습 목표 및 학습 시간 설정
-- 학습 세션과 타이머 관리
-- macOS 활성 앱 확인
-- Chrome 페이지 및 탭 이동 흐름 기록
-- AI 기반 학습 목표 관련성 분석
-- 집중·비집중 상태 기록
-- 목표 이탈 알림 및 집중 복귀 안내
-- 분석 제외 앱·도메인 설정
-- 사용자 동의 기반 카메라 집중 상태 분석
-- 학습 종료 후 집중 활동 리포트 제공
+| 구분 | 기능 |
+| --- | --- |
+| **학습 관리** | 학습 목표와 시간을 설정하고 세션·타이머를 관리합니다. |
+| **활동 기록** | macOS 활성 앱과 Chrome 페이지 이동 흐름을 기록합니다. |
+| **AI 분석** | 현재 활동이 학습 목표와 관련 있는지 분석합니다. |
+| **집중 피드백** | 목표에서 벗어나면 알림과 학습 복귀 안내를 제공합니다. |
+| **개인정보 보호** | 분석 제외 앱·도메인을 설정하고 카메라는 동의 후 사용합니다. |
+| **학습 리포트** | 학습 종료 후 집중 시간과 주요 활동을 정리합니다. |
 
 ## 🧩 서비스 구성
 
-- **Desktop** — Electron 기반 macOS 데스크톱 앱
-- **Extension** — Chrome Extension 기반 브라우저 활동 분석
-- **Server** — 사용자·학습 세션·설정·리포트 관리
-- **AI** — 학습 목표와 현재 활동의 관련성 분석
+| 구성 | 역할 |
+| --- | --- |
+| **Desktop** | 학습 세션·타이머와 macOS 활동 분석을 담당합니다. |
+| **Extension** | 현재 탭과 Chrome 페이지 이동 흐름을 확인합니다. |
+| **Server** | 인증·학습 세션·사용자 설정·활동 기록·리포트를 관리합니다. |
+| **AI** | 학습 목표 관련성과 집중 상태를 분석합니다. |
 
 ## 🛠 기술 스택
 
-### Front-End
+### Client
 
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
 ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
@@ -45,15 +50,19 @@ Desktop 앱에서 학습 세션과 타이머를 관리하며, Chrome Extension�
 ![Electron](https://img.shields.io/badge/Electron-47848F?style=flat-square&logo=electron&logoColor=white)
 ![Chrome Extension](https://img.shields.io/badge/Chrome_Extension-4285F4?style=flat-square&logo=googlechrome&logoColor=white)
 
-### Back-End
+### Server
 
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-007396?style=flat-square&logo=openjdk&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
 
-### AI
+### AI · Analysis
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![MediaPipe](https://img.shields.io/badge/MediaPipe-0097A7?style=flat-square&logo=google&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
+![LangGraph](https://img.shields.io/badge/LangGraph-20232A?style=flat-square&logo=langgraph&logoColor=white)
 
 ## 👥 Members
 
