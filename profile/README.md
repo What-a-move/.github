@@ -1,4 +1,8 @@
-# FocusOn
+<p align="center">
+  <img src="../assets/focuson-logo.png" width="260" alt="FocusOn 로고">
+</p>
+
+<h1 align="center">FocusOn</h1>
 
 ## 💡 프로젝트 소개
 
