@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="../assets/focuson-logo.png" width="260" alt="FocusOn 로고">
+  <img src="https://raw.githubusercontent.com/What-a-move/.github/754260f66716502c38d3018b816f225a376578b9/assets/focuson-logo.png" width="260" alt="FocusOn 로고">
 </p>
 
 <h1 align="center">FocusOn</h1>
